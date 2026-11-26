@@ -1,0 +1,27 @@
+# Final Assessment 2 - Quiz Game
+class Quiz:
+    def __init__(self):
+        self.questions = [
+            {"q": "Python na creator kon che?", "options": ["A. Guido van Rossum", "B. Bill Gates", "C. Elon Musk"], "answer": "A"},
+            {"q": "Python ma list banavva shu vapray?", "options": ["A. ()", "B. []", "C. {}"], "answer": "B"},
+            {"q": "2 + 2 = ?", "options": ["A. 3", "B. 5", "C. 4"], "answer": "C"},
+            {"q": "HTML no full form shu?", "options": ["A. HyperText Markup Language", "B. HighText Machine Language", "C. HyperTabular Markup Language"], "answer": "A"},
+            {"q": "OOP ma Class no object shu kevay?", "options": ["A. Function", "B. Instance", "C. Variable"], "answer": "B"},
+        ]
+        self.score = 0
+    def start(self):
+        print("Welcome to Quiz Game!")
+        for q in self.questions:
+            print("\n" + q["q"])
+            for opt in q["options"]:
+                print(opt)
+            ans = input("Your answer (A/B/C): ").upper()
+            if ans == q["answer"]:
+                print("Correct!")
+                self.score += 1
+            else:
+                print(f"Wrong! Correct answer: {q['answer']}")
+        print(f"\nGame Over! Your Score: {self.score}/{len(self.questions)}")
+
+game = Quiz()
+game.start()

@@ -1,0 +1,38 @@
+# Final Assessment 1 - To-Do List CLI
+class TodoList:
+    def __init__(self):
+        self.tasks = []
+    def add_task(self, task):
+        self.tasks.append(task)
+        print("Task added!")
+    def view_tasks(self):
+        if not self.tasks:
+            print("No tasks yet!")
+        else:
+            for i, task in enumerate(self.tasks, 1):
+                print(f"{i}. {task}")
+    def delete_task(self, num):
+        if 0 < num <= len(self.tasks):
+            removed = self.tasks.pop(num-1)
+            print(f"Deleted: {removed}")
+        else:
+            print("Invalid number!")
+
+todo = TodoList()
+while True:
+    print("\n1. Add Task | 2. View Tasks | 3. Delete Task | 4. Exit")
+    choice = input("Choose: ")
+    if choice == "1":
+        task = input("Enter task: ")
+        todo.add_task(task)
+    elif choice == "2":
+        todo.view_tasks()
+    elif choice == "3":
+        todo.view_tasks()
+        num = int(input("Enter task number to delete: "))
+        todo.delete_task(num)
+    elif choice == "4":
+        print("Bye Bye!")
+        break
+    else:
+        print("Invalid choice!")
