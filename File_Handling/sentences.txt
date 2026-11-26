@@ -1,0 +1,5 @@
+C:\Users\91812\AppData\Local\Python\pythoncore-3.15-64\python.exe c:/Users/91812/Desktop/Python/File_Handling/append_list.py
+C:\Users\91812\AppData\Local\Python\pythoncore-3.15-64\python.exe c:/Users/91812/Desktop/Python/File_Handling/append_list.py
+C:\Users\91812\AppData\Local\Python\pythoncore-3.15-64\python.exe c:/Users/91812/Desktop/Python/File_Handling/append_list.py
+bfbf
+mmr
