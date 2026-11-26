@@ -8,3 +8,4 @@ class Calculator:
 calc = Calculator()
 print("Add:", calc.add(10, 5))
 print("Sub:", calc.sub(10, 5))
+# Assessment 8
